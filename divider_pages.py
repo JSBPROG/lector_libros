@@ -161,7 +161,7 @@ class Divider:
 if __name__ == "__main__":
     # Ejemplo de uso
     print("Ejecutando ejemplo de Divider...")
-    # Asegúrate de tener un archivo PDF de prueba en la carpeta 'data'
+    # En la carpeta data debe haber un archivo
     # Por ejemplo: ./data/prueba.pdf
     pdf_input_path = os.path.join("data", "LaNocheBocaArriba.pdf")
     if os.path.exists(pdf_input_path):

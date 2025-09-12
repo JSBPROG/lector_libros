@@ -15,14 +15,19 @@ if __name__ == "__main__":
     base_output_name = "LaNocheBocaArriba"
     text_dir = "text"       
     audio_dir = "audio"     
+    output_dir = "output"
     audio_out_dir = f"{audio_dir}/result_audio"
-    # Crear carpetas si no existen
+    
+    
     if not os.path.exists(text_dir):
         os.makedirs(text_dir)
     if not os.path.exists(audio_dir):
         os.makedirs(audio_dir)
     if not os.path.exists(audio_out_dir):
         os.makedirs(audio_out_dir)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
 
     # ---------------------------
     # Dividir PDF y extraer texto
