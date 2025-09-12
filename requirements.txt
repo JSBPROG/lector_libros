@@ -1,0 +1,7 @@
+audioop-lts 
+pydub
+PyPDF2
+numpy
+transformers
+torch
+sentencepiece
