@@ -43,10 +43,10 @@ Sigue estos pasos para configurar el entorno de desarrollo.
 1.  **Añadir el PDF**
     Coloca el archivo PDF que deseas convertir en la carpeta `data/`.
 
-2.  **Configurar el script principal**
-    Abre el archivo `main.py` y modifica las siguientes variables si es necesario:
-    - `pdf_path`: Debe apuntar a tu archivo PDF dentro de la carpeta `data`.
-    - `base_output_name`: El nombre base que se usará para los archivos generados.
+2.  **Configurar el nombre del archivo**
+    Abre el archivo `config.py` y modifica la siguiente variable:
+    - `PDF_FILENAME`: Cambia el valor por el nombre de tu archivo PDF. Por ejemplo: `"mi_libro.pdf"`.
+    - `BASE_OUTPUT_NAME`: (Opcional) Cambia el nombre base que se usará para los archivos generados.
 
 3.  **Ejecutar el proyecto**
     ```bash
@@ -55,7 +55,7 @@ Sigue estos pasos para configurar el entorno de desarrollo.
 
 4.  **Encontrar el resultado**
     - Los audios de cada página se guardarán en la carpeta `audio/`.
-    - El audiolibro final, llamado `audio_concatenado_final.wav`, se encontrará en la carpeta `audio/result_audio/`.
+    - El audiolibro final se encontrará en la carpeta `audio/result_audio/` con el nombre `{BASE_OUTPUT_NAME}_completo.wav`.
 
 ## Estructura del Proyecto
 
@@ -70,7 +70,10 @@ lector_libros/
 │   └── VoiceReader.py      # Clase para la conversión de texto a voz
 ├── .gitignore
 ├── audio.py                # Clase para la manipulación de audio (concatenar)
+├── config.py               # Archivo de configuración de rutas y nombres
 ├── divider_pages.py        # Clase para dividir el PDF y extraer texto
-├── main.py                 # Script principal que orquesta todo el proceso
+├── main.py                 # Script de entrada que ejecuta el pipeline
+├── pipeline.py             # Orquesta todo el proceso de conversión
+├── utils.py                # Funciones de utilidad (ej. crear directorios)
 └── requirements.txt        # Lista de dependencias de Python
 ```
