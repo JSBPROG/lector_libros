@@ -2,6 +2,8 @@ audioop-lts
 pydub
 PyPDF2
 numpy
-transformers
+git+https://github.com/huggingface/transformers.git
 torch
 sentencepiece
+langdetect
+datasets

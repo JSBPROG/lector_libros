@@ -1,0 +1,30 @@
+ork
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+Device set to use cpu
+Pipeline de texto a voz inicializado en CPU.
+Modelo cargado en CPU.
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 20.11it/s]
+Modelo NLLB-200 3.3B cargado en CPU.
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.65it/s]
+1. Configurando directorios...
+   -> Directorios listos.
+
+2. Procesando PDF y traduciendo si se requiere...
+Abriendo PDF: data\LaNocheBocaArriba.pdf
+El PDF tiene 5 páginas. Dividiendo...
+Creado: ./output\LaNocheBocaArriba_pagina_1.pdf  
+Creado: ./output\LaNocheBocaArriba_pagina_2.pdf  
+Creado: ./output\LaNocheBocaArriba_pagina_3.pdf  
+Creado: ./output\LaNocheBocaArriba_pagina_4.pdf
+Creado: ./output\LaNocheBocaArriba_pagina_5.pdf
+
+Convirtiendo 5 archivos PDF a texto...
+Texto extraído en: ./text\LaNocheBocaArriba_pagina_1.txt
+Texto extraído en: ./text\LaNocheBocaArriba_pagina_2.txt
+Texto extraído en: ./text\LaNocheBocaArriba_pagina_3.txt
+Texto extraído en: ./text\LaNocheBocaArriba_pagina_4.txt
+Texto extraído en: ./text\LaNocheBocaArriba_pagina_5.txt
+Texto detectado en español. ¿Quieres traducirlo al inglés? S/N: s
+   -> Página LaNocheBocaArriba_pagina_1.txt traducida a en.
+Texto detectado en español. ¿Quieres traducirlo al inglés? S/N: s
+   -> Página LaNocheBocaArriba_pagina_2.txt traducida a en.
